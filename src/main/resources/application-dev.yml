@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    username: wld_test
+    password: Weilingdi#2018Abc#!
+    url: jdbc:mysql://rr-wz99n3zn226v2sf027o.mysql.rds.aliyuncs.com:3306/payment?characterEncoding=utf8&zeroDateTimeBehavior=round&allowMultiQueries=true
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: org.spring.springboot.entity
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
