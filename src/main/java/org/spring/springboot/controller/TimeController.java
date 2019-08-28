@@ -1,6 +1,7 @@
 package org.spring.springboot.controller;
 
 import com.github.pagehelper.PageHelper;
+import org.apache.log4j.Logger;
 import org.spring.springboot.entity.TimeTaskSchedulCenterBean;
 import org.spring.springboot.util.Page;
 import org.spring.springboot.service.TimeTaskSchedulCenterService;
@@ -15,6 +16,7 @@ import java.util.HashMap;
 @RestController
 @RequestMapping("/time/")
 public class TimeController {
+    private Logger logger = Logger.getLogger(TimeController.class);
 
     @Autowired
     TimeTaskSchedulCenterService timeTaskSchedulCenterService;
@@ -40,7 +42,7 @@ public class TimeController {
         PageHelper.startPage(1,10);
         Page<TimeTaskSchedulCenterBean>  taskSchedulCenterBeans = timeTaskSchedulCenterService.findListById(map);
         if(timeTaskSchedulCenterService.downlondExc(taskSchedulCenterBeans)){
-            System.out.printf("Excel生成成功........");
+            logger.info("Excel生成成功........");
         }
     }
 }
