@@ -18,4 +18,6 @@ public interface TimeTaskSchedulCenterService {
 
     // 下载制作表单
     Boolean downlondExc(List<TimeTaskSchedulCenterBean> list) throws IOException;
+
+    int updateById(TimeTaskSchedulCenterBean bean);
 }

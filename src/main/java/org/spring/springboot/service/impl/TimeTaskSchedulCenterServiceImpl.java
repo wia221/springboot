@@ -82,4 +82,14 @@ public class TimeTaskSchedulCenterServiceImpl implements TimeTaskSchedulCenterSe
         return true;
     }
 
+    /**
+     * 更新操作
+     * @param bean
+     * @return
+     */
+    @Override
+    public int updateById(TimeTaskSchedulCenterBean bean) {
+        return timeTaskSchedulCenterDao.updateByPrimaryKey(bean);
+    }
+
 }
