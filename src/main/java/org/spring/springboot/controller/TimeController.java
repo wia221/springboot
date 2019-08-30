@@ -77,6 +77,7 @@ public class TimeController {
             int a = Integer.parseInt(b);
             isUpdate = timeTaskSchedulCenterService.updateById(bean);
             if(isUpdate != 0){
+             //   platformTransactionManager.commit(transactionStatus); 未验证
                 logger.info("timeController-------->updateTime success");
             }
         }catch (Exception e){
