@@ -28,7 +28,7 @@ public class EmailTest {
             System.out.println("value" + value);
             email.setFrom(sendAddress,value);//发送人邮箱
             // 如果需要认证信息的话，设置认证：用户名-密码。分别为发件人在邮件服务器上的注册名称和密码
-            email.setAuthentication(sendAddress, "7712127@klo");
+            email.setAuthentication(sendAddress, "xxx@klo");
             // 要发送的邮件主题
             email.setSubject("《GreedFall》现已在 Steam 上推出！");
             // 要发送的信息，由于使用了HtmlEmail，可以在邮件内容中使用HTML标签
