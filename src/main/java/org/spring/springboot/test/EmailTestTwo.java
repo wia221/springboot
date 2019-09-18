@@ -29,7 +29,7 @@ public class EmailTestTwo {
         Session session = Session.getDefaultInstance(properties, new Authenticator() {
             @Override
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("xxx@outlook.com", "xxxx@klo");//账号密码
+                return new PasswordAuthentication("xxx@outlook.com", "xxxx");//账号密码
             }
         });
         //创建MimeMessage消息对象，消息头配置了收发邮箱的地址，消息体包含了邮件标题和邮件内容。接收者类型：TO代表直接发送，CC代表抄送，BCC代表秘密抄送。
