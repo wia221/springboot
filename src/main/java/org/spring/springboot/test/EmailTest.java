@@ -6,7 +6,16 @@ import org.apache.commons.mail.HtmlEmail;
  * 使用commons.mail发送邮件
  */
 public class EmailTest {
-
+    /**
+     * TLS协议
+     * TLS(Transport Layer Security，传输层安全协议)，用于两个应用程序之间提供保密性和数据完整性。该协议由两层组成：TLS记录协议和TLS握手协议。
+     *
+     * SSL是Netscape开发的专门用户保护Web通讯的，目前版本为3.0。最新版本的TLS 1.0是IETF(工程任务组)制定的一种新的协议，它建立在SSL 3.0协议规范之上，是SSL 3.0的后续版本。两者差别极小，可以理解为SSL 3.1，它是写入了RFC的。
+     *
+     * SSL协议与TLS协议关系
+     * 最新版本的TLS（Transport Layer Security，传输层安全协议）是IETF（Internet Engineering Task Force，Internet工程任务组）制定的一种新的协议，它建立在SSL 3.0协议规范之上，是SSL 3.0的后续版本。在TLS与SSL3.0之间存在着显著的差别，主要是它们所支持的加密算法不同，所以TLS与SSL3.0不能互操作。
+     * @param args
+     */
     public static void main(String[] args) {
         HtmlText htmlText = new HtmlText();
         try {
