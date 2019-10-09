@@ -9,7 +9,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class Test {
+public class POITest {
     public static void main(String[] args) throws IOException {
         String[] title = {"订单ID", "流水号"};
         //创建HSSF工作薄
