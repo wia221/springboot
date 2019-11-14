@@ -14,3 +14,12 @@ mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
+email:
+  hostName:
+  smtpPort:
+  setFrom:
+  userName:
+  password:
+  subject:
+  charset: UTF-8
+
